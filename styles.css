@@ -1,0 +1,266 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  min-height: 2500px;
+  background-color: white;
+}
+
+.justify {
+  text-align: justify;
+  text-justify: auto;
+  /* word-spacing: -1px;
+  letter-spacing: 0px; */
+}
+
+.jumbotron {
+  margin-top: -50px;
+  padding-top: 3rem;
+  /* margin-top: -300px; padding-top: 4rem; */
+  /* margin-top: 2rem; */
+  background-color: #dff0ff;
+  /* background: linear-gradient(to bottom, #eef7ff 33%, white 0%); */
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+/* svg {
+  background-color: #eef7ff;
+} */
+
+.container.mt-5 {
+  margin-top: 50px;
+}
+@media only screen and (max-width: 2560px) {
+  #me {
+    width: 400px;
+  }
+  #jumbotron {
+    margin-top: -230px;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  #me {
+    width: 400px;
+  }
+  #jumbotron {
+    margin-top: -150px;
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  #me {
+    width: 300px;
+  }
+  #jumbotron {
+    margin-top: -100px;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #me {
+    width: 200px;
+  }
+  #jumbotron {
+    margin-top: -100px;
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #me {
+    width: 75px;
+  }
+  #projects,
+  #experience {
+    margin-top: 0px;
+  }
+
+  #experience {
+    margin-top: 200px;
+  }
+  .container {
+    padding: 0px;
+    margin: auto;
+  }
+  #projects .container-sm {
+    padding: 0px;
+    margin: auto;
+    justify-content: center;
+  }
+
+  #blob {
+    display: none;
+  }
+  #blob1 {
+    display: none;
+  }
+  #waves {
+    margin-bottom: 50px;
+    background-color: white;
+  }
+  #ML-projects {
+    margin-bottom: 200px;
+  }
+
+  #jumbotron {
+    margin-top: -70px;
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+  }
+
+  #experience {
+    min-height: 900px;
+  }
+
+  .box {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+/* .element {
+  height: 50px;
+  width: 50px;
+  border-radius: 10%;
+  margin: 0 auto;
+  margin-top: -100px;
+  background-color: #dff0ff;
+  animation-name: stretch;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(0.3);
+    background-color: #dff0ff;
+    border-radius: 100%;
+  }
+  50% {
+    background-color: #a2d9ff;
+  }
+  100% {
+    transform: scale(1.5);
+    background-color: #5997ca;
+  }
+} */
+
+#blob {
+  position: absolute;
+  height: 500px;
+}
+
+#blob1 {
+  position: absolute;
+  height: 800px;
+}
+
+#experience {
+  background-color: #dff0ff;
+  width: 100%;
+  height: 100vh;
+}
+
+#projects {
+  margin-top: -100px;
+  padding-top: 4rem;
+}
+
+#experience {
+  margin-top: -80px;
+  padding-top: 4rem;
+}
+
+.floating {
+  position: relative;
+
+  transform: translateY(0);
+  transition: transform 1s;
+}
+.floating:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  height: 8px;
+  width: 100%;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  transform: translate(-50%, 0);
+  transition: transform 1s;
+}
+
+/* Hover States */
+.floating:hover {
+  transform: translateY(-40px);
+  transition: transform 1s;
+}
+.floating:hover:after {
+  transform: translate(-50%, 40px) scale(1.75);
+  transition: transform 1s;
+}
+
+#imgAboutWrapper {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+
+  transform: translateY(0);
+  transition: transform 1s;
+}
+
+#me {
+  width: 200px;
+}
+
+#imgAboutWrapper:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  padding-bottom: 2rem;
+  height: 8px;
+  width: 50%;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  transform: translate(-50%, -50%);
+  transition: transform 0.5s;
+}
+
+#imgAboutWrapper:hover {
+  transform: translateY(-43px);
+  transition: transform 1s;
+}
+#imgAboutWrapper:hover:after {
+  transform: translate(-50%, 30px) scale(1.25);
+}
